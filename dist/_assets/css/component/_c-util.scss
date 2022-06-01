@@ -1,8 +1,11 @@
 .c-inner {
-	max-width: 1080px;
+	max-width: 1110px;
 	width: calc(100% - 40px);
 	margin-left: auto;
 	margin-right: auto;
+	&--1440{
+		max-width: 1440px;
+	}
 	@include media(sm) {
 	}
 }

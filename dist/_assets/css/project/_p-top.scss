@@ -1,20 +1,83 @@
+$main-color: rgb(227, 45, 188);
 
-
-.mainlogo {
-    width: 30%;
+header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  padding: 35px;
+  .mainlogo {
+      img {
+          width: 180px;
+      }
+  }
 }
 
 .topper {
-    display: flex;
-    
+  background: url(../../images/bg_mv.png) right center no-repeat;
+  background-size: auto 100%; //左右　上下
+  height: 680px;
+  padding-top: 220px;
+  .top-message1 {
+    .text {
+      background-color: #fff;
+      font-size: 90px;
+    }
+    .pink {
+      color: $main-color;
+    }
+  }
+
+  .top-message2 {
+      font-size: 28px;
+      margin-top: 20px;
+      span {
+          background-color: #fff;
+      }
+  }
+
+.formbox {
+    .form {
+        padding: 3%;
+        border-radius: 100px;
+        background-color: #e32dbc;
+        color: #fff;
+        font-weight: 600;
+        display: inline-block;
+        margin-top: 31px;
+    }
+  }
+}
+
+.c-inner {
+  max-width: 1100px;
 }
 
 .top-message1 {
-    font-size: 2rem;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.form {
-    background-color: rgb(227, 45, 188);
-    color:#fff;
+.mainbgimgbox {
+  border-radius: 0 0 0 30px;
+  overflow: hidden;
+}
+
+.sec3 {
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    &.rev {
+      flex-direction: row-reverse;
+    }
+    &_image {
+      width: 65%;
+      height: 550px;
+      object-fit: cover;
+    }
+    &_textbox {
+      width: 39%;
+    }
+  }
 }
