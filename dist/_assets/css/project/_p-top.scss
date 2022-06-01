@@ -1,20 +1,138 @@
+.p-sec01 {
+    background: url(../../images/bg_mv.jpg) right center no-repeat;
+    background-size: auto 100%;
 
+    padding: 220px 0 95px;
+    max-width: 1440px;
+    margin: 0 auto;
+    @include media(sm) {
+        padding: 100px 0;
+    }
+    &__title {
+        font-size: 90px;
+        font-style: italic;
+        @include media(sm) {
+            font-size: 40px;
+        }
+        > span {
+            background-color: #fff;
+            line-height: 1.2;
+            .pink {
+                color: $pink;
+            }
+        }
+    }
+    .ja {
+        font-size: 28px;
+        font-weight: bold;
+        margin-top: 10px;
+        span {
+            background-color: #fff;
+        }
+        @include media(sm) {
+            font-size: 18px;
+        }
+    }
+    .btn {
+        margin-top: 30px;
+    }
+}
 
-.mainlogo {
-    width: 30%;
+.p-sec02 {
+    text-align: center;
+    margin-top: -20px;
+    .title {
+        color: $pink;
+        font-style: italic;
+        font-size: 108px;
+        font-weight: bold;
+        @include media(sm) {
+            font-size: 40px;
+        }
+    }
+    .text1 {
+        font-size: 32px;
+        margin: 20px 0;
+        font-weight: bold;
+        @include media(sm) {
+            font-size: 20px;
+        }
+        span {
+            color: $pink;
+        }
+    }
+    .text2 {
+        font-size: 16px;
+        line-height: 2;
+    }
+}
+.p-sec03 {
+    margin-top: 30px;
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        + .flex {
+            margin-top: 80px;
+        }
+        .image {
+            margin-bottom: 20px;
+            height: 550px;
+        }
+        .textarea {
+            background-color: #fff;
+            width: 555px;
+            flex-shrink: 0;
+            padding: 60px;
+            margin-left: -64px;
+            box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+            .text1 {
+                color: $pink;
+            }
+            .title {
+                font-weight: bold;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                font-size: 32px;
+                line-height: 1.5;
+            }
+            .text2 {
+                font-size: 16px;
+                line-height: 28.8px;
+            }
+        }
+        &--rev {
+            flex-direction: row-reverse;
+            .textarea {
+                margin-left: 0;
+                margin-right: -64px;
+            }
+        }
+    }
+}
+@include media(sm) {
+}
+.sec3 {
+    .flex {
+    }
+    &_image {
+    }
+}
+.sec3 {
+}
+.sec3 .flex {
+}
+.sec3_image {
 }
 
 .topper {
-    display: flex;
-    
-}
-
-.top-message1 {
-    font-size: 2rem;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.form {
-    background-color: rgb(227, 45, 188);
-    color:#fff;
+    .top-message1 {
+    }
+    .top-message2 {
+    }
+    .formbox {
+        .form {
+        }
+    }
 }

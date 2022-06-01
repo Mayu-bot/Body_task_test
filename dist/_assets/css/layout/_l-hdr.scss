@@ -1,0 +1,12 @@
+.l-hdr {
+  padding: 35px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  transition: .3s ease;
+  &.is-scroll {
+    background-color: #fff;
+  }
+}

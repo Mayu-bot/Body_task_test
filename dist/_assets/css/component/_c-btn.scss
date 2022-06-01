@@ -3,4 +3,19 @@
   中央寄せなどは親要素で設定
 */
 .c-btnA {
+  background: $pink;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50px;
+  width: 370px;
+  height: 90px;
+  font-size: 20px;
+  font-weight: bold;
+  max-width: 100%;
+  @include media(sm) {
+    height: 60px;
+    font-size: 16px;
+  }
 }
